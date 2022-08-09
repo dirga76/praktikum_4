@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas_2</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body bgcolor="gray">
+    <div id="app" class="flex-col w-full h-screen flex justify-center items-center object-center relative">
+        <img :src="pictureUser" alt="" class="rounded-full w-[300px]" />
+        <h1 class="font-bold text-2xl">{{ nameUser }}</h1>
+        <button class="bg-white w-[20rem] rounded-[10rem] hover:bg-gray-400" @click="generateUser() ">
+        Tekan Liat gambar
+      </button>
+    </div>
+
+    <script src="tugas12.js"></script>
+</body>
+
+</html>
